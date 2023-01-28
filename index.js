@@ -72,5 +72,18 @@ function passwordGenerator(){
     
     pass1El.textContent = pass;
     pass2El.textContent = pass2;
-    
 }
+
+function copy(that){
+    var inp =document.createElement('input');
+    document.body.appendChild(inp)
+    inp.value =that.textContent
+    inp.select();
+    document.execCommand('copy',false);
+    inp.remove();
+    let alert = document.getElementById('alert');
+    alert.style.animationName = 'alert'
+    setTimeout(function(){alert.style.animationName = 'none'}, 1300)
+}
+
+

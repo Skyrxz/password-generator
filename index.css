@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Karla');
 
+html {
+    overflow: hidden;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -44,7 +48,9 @@ body {
 
 #desc {
     margin-top: 20px;
+    margin-bottom: 50px;
     font-size: min(4.5vw, 30px);
+    color: rgb(188, 187, 187);
 }
 
 #h2 {
@@ -76,3 +82,22 @@ body {
     margin-right: 10px;
     width: 2vw;
 }
+
+#alert {
+    font-size: 3vw;
+    background-color: #4adf867e;
+    width: 12vw;
+    height: 4vw;
+    visibility: hidden;
+    border-radius: 5px;
+    transform: translateY(50vw);
+    animation-duration: 1.5s;
+}
+
+@keyframes alert {
+    50% {
+        visibility: visible;
+        transform: translateY(3vw);
+    }
+}
+
