@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <title>password_</title>
+        <link rel="shortcut icon" href="favicon.png">
+    </head>
+    <body>
+        <div id="headerWrapper">
+            <h2 class="h1" id="h1">Generate a</h2>
+            <h2 class="h1" id="h2">random Password</h2>
+            <span id="desc">Never use an insecure password again.</span>
+            <h1><button onclick='passwordGenerator()' id="gen">Generate Passwords</button></h1>
+            <form id="form">
+                <label name="no-symbols"><input id="no-symbols-el" type="checkbox" name="no-symbols">No Symbols</label>         
+                <label name="no-numbers"><input id="no-numbers-el" type="checkbox" name="no-numbers">No Numbers</label>             
+            </form> 
+        </div>
+        <center>
+            <div id="pass1El" class="passEl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+            <div id="pass2El" class="passEl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div> 
+        </center>       
+        <script src="index.js"></script>
+    </body>
+</html>
